@@ -1,0 +1,62 @@
+/* TableRow owns: row states and all cell-level styles */
+
+.building-table-row {
+    cursor: pointer;
+    transition: background-color 0.15s ease;
+
+    &:hover {
+        background-color: #f1f7ff;
+
+        .type-cell {
+            color: #007bff;
+        }
+
+        .total-cell {
+            background-color: #e3ecff;
+            color: #1a5ccc;
+        }
+    }
+
+    &.active-row {
+        background-color: #dbeafe;
+
+        .type-cell {
+            color: #1a5ccc;
+            font-weight: 700;
+        }
+
+        .total-cell {
+            background-color: #c7dbfd;
+            color: #1a5ccc;
+        }
+    }
+}
+
+.type-cell {
+    font-weight: 600;
+    color: #2d3436;
+    white-space: nowrap;
+    transition: color 0.15s ease;
+}
+
+.unit-cell {
+    color: #6c757d;
+    font-size: 0.8rem;
+    white-space: nowrap;
+}
+
+.value-cell {
+    text-align: center;
+    color: #636e72;
+}
+
+.total-cell {
+    background-color: #f7f8fa;
+    text-align: center;
+    font-weight: 700;
+    white-space: nowrap;
+    color: #3d4852;
+    border-left: 2px solid #dee2e6;
+    cursor: pointer;
+    transition: background-color 0.15s ease, color 0.15s ease;
+}
