@@ -3,7 +3,7 @@
 A web-based BIM viewer built with React and Python/Flask.  
 Load IFC models in 3D, and explore a live quantity table broken down by element type and floor level. Clicking any row or column highlights the matching elements in the 3D scene.
 
----
+<img width="886" height="685" alt="Screenshot 2026-04-08 at 20 06 49" src="https://github.com/user-attachments/assets/7827580b-a449-4d0f-8035-74f1ef0719d1" />
 
 ## Features
 
